@@ -180,7 +180,7 @@ def build():
     df_day = detection_type(class_option, df_day)
 
     #---------------------------------#
-    st.write("**1.0** Data, first 15 rows ")
+    st.write("**1.0** Data")
     if st.checkbox('Show data'):
         st.write(df_day)
 
