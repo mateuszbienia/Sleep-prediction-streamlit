@@ -42,8 +42,7 @@ day_options = [ "2021_01_15.csv", "2021_01_16.csv", "2021_01_19.csv", "2021_01_2
 #---------------------------------#
 # Page layout
 ## Page expands to full width
-st.set_page_config(page_title='Sleep prediction App',
-    layout='wide')
+st.set_page_config(page_title='Sleep prediction App')
 #---------------------------------#
 # functions
 def load_file(path, index=False):
