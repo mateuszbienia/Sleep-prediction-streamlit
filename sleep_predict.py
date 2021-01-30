@@ -1,26 +1,19 @@
 # basic
 import streamlit as st
 import pandas as pd
-import numpy as np
 import os
-import copy
 
 # classifiers
 from sklearn.ensemble import RandomForestClassifier
 
 # model selection
-from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_score
-from sklearn.model_selection import KFold
 
 # mertics
 from sklearn.metrics import accuracy_score
-from sklearn.metrics import confusion_matrix
 from sklearn.metrics import plot_confusion_matrix
 
 # other
-import pickle
-from datetime import datetime
 import matplotlib.pyplot as plt
 from matplotlib import dates as plotdates
 from matplotlib.figure import Figure
@@ -194,7 +187,7 @@ def build():
 
     #---------------------------------#
     st.subheader('**1.2** Confusion matrix')
-    fig = make_conf_matrix(copy.deepcopy(clf), X_true, y_true, conf_plot_labels)
+    fig = make_conf_matrix(clf, X_true, y_true, conf_plot_labels)
     st.write(fig)
 
     #---------------------------------#
