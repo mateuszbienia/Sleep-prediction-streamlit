@@ -50,7 +50,7 @@ def load_file(path, index=False):
 
 def get_classifier(flag):
     if flag == "sleep/wake":
-        conf_plot_labels = ["awake", "sleep"]
+        conf_plot_labels = ["sleep", "awake"]
         clf = RandomForestClassifier(criterion='entropy', n_estimators=100)
     if flag == "wake/light/deep/REM":
         clf = RandomForestClassifier(criterion='entropy', n_estimators=800)
